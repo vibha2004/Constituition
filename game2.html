@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="game2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="h1-tag">Act Sequence Challenge</h1>
+  <p class="instructions">Drag and drop the acts to match them with the correct scenarios listed above. Click "Check" to see if your sequence is correct. You have 1 minute to complete the challenge.</p>
+  <div class="div_tag">
+  <div ><span id="timer">Time Remaining: 1:00</span></div>
+  <div class="container_mini2">
+  <ol id="questionsList">
+    <li>Dr. Sharma’s clinic faces criticism for failing to meet registration standards, which affects the quality of medical care provided.</li>
+    <li>Mrs. Patel is concerned about the safety and adequacy of the medical services she is receiving at the clinic.</li>
+    <li>Anil, a patient with a disability, struggles to access the specialized medical care he is entitled to.</li>
+    <li>Priya is seeking legal advice on her rights regarding the termination of her pregnancy.</li>
+    <li>Arun is unhappy with the quality of a medical product he purchased from the clinic and wants to file a complaint.</li>
+  </ol>
+
+  <ul id="dragList" class="drag-list">
+    <li class="drag-item" draggable="true">
+      <div class="act-text">The Persons with Disabilities (Equal Opportunities, Protection of Rights and Full Participation) Act, 1995</div>
+    </li>
+    <li class="drag-item" draggable="true">
+      <div class="act-text">The Medical Termination of Pregnancy (MTP) Act, 1971</div>
+    </li>
+    <li class="drag-item" draggable="true">
+      <div class="act-text">The Clinical Establishments (Registration and Regulation) Act, 2010</div>
+    </li>
+    <li class="drag-item" draggable="true">
+      <div class="act-text">The Protection of Human Rights Act, 1993</div>
+    </li>
+    <li class="drag-item" draggable="true">
+      <div class="act-text">The Consumer Protection Act, 2019</div>
+    </li>
+  </ul>
+</div>
+
+  <button id="checkButton" class="action-button">Check</button>
+  <button id="playAgainButton" class="action-button" style="display: none;">Play Again</button>
+  <div id="message" style="display: none;"></div>
+ </div>
+
+<script src="game2.js"></script>
+</body>
+</html>

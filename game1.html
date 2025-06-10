@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <title>Consumer Rights Matching Game</title>  
+  <link rel="stylesheet" href="game1.css">
+</head>
+<body>
+  <h1 class="h1_tag">Consumer Rights Matching Game</h1>
+  <p class="p_tag">Drag the consumer right over to the matching description</p>
+
+  <!-- Timer display -->
+  <p ><span id="timer">Time Left: 60 seconds</span></p>
+
+  <main class="container_rights">
+    <div>
+      <ul class="draggable-list">
+        <li id="r1" draggable="true">Right to Safety</li>
+        <li id="r2" draggable="true">Right to Information</li>
+        <li id="r3" draggable="true">Right to Choose</li>
+        <li id="r4" draggable="true">Right to Redressal</li>
+        <li id="r5" draggable="true">Right to Consumer Education</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="draggable-list">
+        <li id="d1" draggable="true">Consumers have the right to choose from a variety of goods and services at competitive prices, ensuring freedom in purchasing decisions.</li>
+        <li id="d2" draggable="true">Consumers have the right to seek redress against unfair or restrictive trade practices and can claim compensation for faulty goods or services.</li>
+        <li id="d3" draggable="true">Consumers have the right to be informed about the quality, quantity, price, and purity of goods and services to avoid unfair trade practices.</li>
+        <li id="d4" draggable="true">Consumers have the right to acquire knowledge and skills to be informed and responsible buyers through consumer education programs.</li>
+        <li id="d5" draggable="true">Consumers have the right to be protected against the marketing of goods and services that are hazardous to life and property. This applies especially to products like food, pharmaceuticals, and electrical appliances.</li>
+      </ul>
+    </div>
+    <div id="endMessage"></div>
+  
+  <!-- Back to Chapters button initially hidden -->
+  <div id="backToChapters" style="display: none; text-align: center; margin-top: 20px;">
+    <a href="chapters.html" style="text-decoration: none; padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px; font-family: 'Orbitron', sans-serif;">Back to Chapters</a>
+  </div>
+  </main>
+
+  
+
+  <script src="game1.js"></script>
+</body>
+</html>
+

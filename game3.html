@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game3.css">  <!-- Linking external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <title>Scenario Sorting Game</title>
+</head>
+<body>
+    <h1 class="heading">Drop under the appropriate Box!</h1>
+    <h2 class="h2_tag">Match the scenarios to the appropriate act/article</h2>
+    
+    <div id="timer">Time Left: 2:00</div>
+
+    <!-- Container for the game -->
+    <div class="container_minigame3">
+        <!-- Scenarios to Sort -->
+        <div id="scenarios" class="box grey">
+            <p>Scenarios to Sort:</p>
+        </div>
+
+        <!-- Act/Article boxes -->
+        <div id="POSH" class="box">POSH Act</div>
+        <div id="EqualRemuneration" class="box">Equal Remuneration Act</div>
+        <div id="IndustrialDisputes" class="box">Industrial Disputes Act</div>
+        <div id="Article15" class="box">Article 15(1)</div>
+        <div id="Article21" class="box">Article 21</div>
+    </div>
+
+    <!-- Result and buttons section -->
+    <div id="result"></div>
+    
+    <!-- Button container that is hidden initially -->
+    <div id="game3" class="button-container hidden">
+        <button id="tryAgainBtn" class="hidden">Try Again</button>
+        <a href="chapters.html" id="backToChaptersBtn" style="text-decoration: none; padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px; font-family: 'Orbitron', sans-serif;">Back to Chapters</a>
+    </div>
+    
+
+    <!-- External JavaScript file -->
+    <script src="game3.js"></script>
+</body>
+</html>

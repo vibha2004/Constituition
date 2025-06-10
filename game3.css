@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.heading{
+    color: #fabb6a;
+    text-shadow: 0 0 15px rgba(244, 192, 123, 0.8),
+                 0 0 30px rgba(244, 192, 123, 0.6),
+                 0 0 45px rgba(244, 192, 123, 0.4),
+                 0 0 60px rgba(244, 192, 123, 0.2);
+	font-family: 'Orbitron', sans-serif;
+}
+.h2_tag{
+    margin: 20px 0;
+    font-family: "Roboto Mono", monospace;
+}
+#timer {
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(28, 249, 212);
+}
+.container_minigame3 {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    margin: 15px;
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: "Roboto Mono", monospace;
+
+}
+.box {
+    width: 150px;
+    min-height: 150px;
+    border: 2px dashed #6bcef8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: #69d2ff96;
+    vertical-align: top;
+    overflow: hidden;
+}
+.scenario {
+    background-color: #f49e5def;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    border: 1px solid #fb9c49c5;
+    cursor: grab;
+    display: inline-block;
+}
+.correct {
+    background-color: rgb(132, 237, 132);
+}
+.wrong {
+    background-color: rgb(238, 117, 117);
+}
+.grey {
+    background-color: #6bcef894;
+}
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: "Roboto Mono", monospace;
+}
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 15px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #607d8b;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+	/* background-color: #f4c07b;
+    border: 3px solid #f4c07b;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s; */
+}
+
+#game3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

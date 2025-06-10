@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+  <title>Child Labor Laws Cheat Sheet</title>
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif; /* Default font for content */
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("bg.jpg");
+      background-size: cover;
+      color: #060c18b1; /* Dark color for text */
+      overflow: auto; /* Allow scrolling if content overflows */
+      position: relative;
+    }
+
+    .main-container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .video-container {
+      flex: 2; /* Larger portion for the video */
+      margin-right: 20px;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      margin-left: 4px;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-container {
+      flex: 1; /* Reduced width for sneak peek effect */
+      background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
+      padding: 1rem; /* Reduced padding for a more compact look */
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for effect */
+      backdrop-filter: blur(5px); /* Glass effect */
+      color: #000000; /* Dark color for text */
+      max-height: 90vh; /* Limit height for a peek effect */
+      overflow-y: auto; /* Allow vertical scroll if content exceeds container height */
+    }
+
+    h1 {
+      color: #000000;
+      font-family: 'Orbitron', sans-serif; /* Font for the heading */
+      font-size: 36px; /* Slightly reduced font size for better fit */
+      text-align: center;
+      opacity: 0.8; /* Consistent opacity */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+      color: #fff;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif; /* Font for subheadings */
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: #d3a418; /* Light yellow for subheadings */
+    }
+
+    ul {
+      font-family: 'Lexend', sans-serif; /* Font for content */
+      font-size: 16px; /* Slightly reduced font size */
+      margin-bottom: 15px;
+      line-height: 1.5;
+      padding-left: 20px; /* Space for bullet points */
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .transparent-btn {
+      font-family: 'Orbitron', sans-serif; /* Font for the button */
+      background-color: rgba(255, 255, 255, 0.2); /* More transparent */
+      border: 1px solid rgba(255, 255, 255, 0.5); /* Slightly more visible border */
+      padding: 0.8rem; /* Reduced padding for button */
+      border-radius: 20px;
+      font-size: 36px; /* Smaller button text */
+      cursor: pointer;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      margin-bottom: 12px;
+    }
+
+    .transparent-btn:hover {
+      opacity: 0.4;
+      transform: scale(1.05);
+    }
+
+    .eye-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+    }
+
+    .eye-button img {
+      width: 24px; /* Adjust size as necessary */
+      height: auto;
+    }
+
+    .bottom-buttons {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px; /* Space between buttons */
+    }
+
+    .bottom-buttons a {
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Green background for buttons */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .bottom-buttons a:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    .mini-game-btn {
+      display: none; /* Initially hidden */
+      padding: 10px 20px;
+      background-image: linear-gradient(144deg, #00BFFF, #FFFF00); /* Gradient from cobalt blue to yellow */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .mini-game-btn:hover {
+      background-image: linear-gradient(144deg, #00BFFF, #FFFF00); /* Same gradient on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Eye Button with an Image -->
+  <a href="https://legislative.gov.in/constitution-of-india/" class="eye-button">
+    <img src="i.png" alt="Eye Icon">
+  </a>
+
+  <div class="main-container">
+    <div class="video-container">
+      <video id="childLabourVideo" controls>
+        <source src="ch2-final.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content-container">
+      <h1 class="transparent-btn">Consumer Rights</h1>
+
+      <h2>Right to Safety</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Protects consumers against goods and services that are hazardous to health or life. Ensures that products and services meet quality and safety standards.</li>
+      </ul>
+  
+      <h2>Right to Information</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Consumers have the right to be informed about the quality, quantity, potency, purity, standard, and price of goods and services. They should receive all necessary information to make an informed choice.</li>
+      </ul>
+  
+      <h2>Right to Choose</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Ensures that consumers have the freedom to choose from a range of products and services at competitive prices. It prevents unfair trade practices and monopolies.</li>
+      </ul>
+  
+      <h2>Right to be Heard</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Consumers have the right to be heard and to seek redressal for grievances. This includes the ability to file complaints and to be heard in the resolution process.</li>
+      </ul>
+  
+      <h2>Right to Redressal</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Provides consumers with the right to seek compensation for any loss or injury suffered due to defective goods, deficient services, or unfair trade practices. The Act outlines mechanisms for filing complaints and seeking remedies.</li>
+      </ul>
+  
+      <h2>Right to Consumer Education</h2>
+      <ul>
+        <li><strong>Act:</strong> Consumer Protection Act, 2019 (CPA)</li>
+        <li><strong>Description:</strong> Ensures that consumers are educated about their rights and responsibilities. This includes awareness about consumer rights, remedies, and legal recourse.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Middle Buttons -->
+  <div class="bottom-buttons">
+    <a href="game1.html" class="mini-game-btn" id="miniGameBtn">Play Mini Game</a>
+    <a href="indexmain4.html">Next Chapter</a>
+    <a href="chapters.html">Move to Home Page</a>
+    
+
+  </div>
+
+  <!-- Mini Game Button -->
+  
+  <script>
+    document.getElementById('childLabourVideo').addEventListener('ended', function() {
+      document.getElementById('miniGameBtn').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Background styling */
+.chapters-background {
+  background: url("bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the grid */
+.container_ch {
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for effect */
+  width: 98%;
+  max-width: 1200px;
+  margin: auto;
+  backdrop-filter: blur(2px);
+}
+
+/* Grid for chapters */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 3rem; /* Adjusted gap to 3rem for better spacing */
+  justify-items: center;
+}
+
+/* Individual chapter card */
+.chapter-card {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Circular or rectangular chapter logo */
+.chapter-logo {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%; /* Circular shape */
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden; /* Ensures the image doesn't overflow the border */
+}
+
+.chapter-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  border-radius: 50%; /* Ensures the image inherits the circular shape */
+}
+
+/* Chapter text */
+.chapter-card h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.chapter-subtitle {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgb(90, 3, 3);
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+      grid-template-columns: 1fr; /* Single column for mobile screens */
+  }
+}
+
+/* Link styling */
+.chapter-link {
+  text-decoration: none; /* Remove default link underline */
+}
+
+/* Hover effect */
+.chapter-link:hover .chapter-card {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}

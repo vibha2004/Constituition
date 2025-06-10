@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.container_rights {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  body {
+    background: url("bg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    color: #37474f;
+  }
+  
+  #timer{
+    background-color: rgb(28, 249, 212);
+    font-weight: bold;
+  }
+  .h1_tag{
+    color: #fabb6a;
+    text-shadow: 0 0 15px rgba(244, 192, 123, 0.8),
+                 0 0 30px rgba(244, 192, 123, 0.6),
+                 0 0 45px rgba(244, 192, 123, 0.4),
+                 0 0 60px rgba(244, 192, 123, 0.2);
+  }
+  .p_tag{
+    font-weight: bold;
+  }
+  h1{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+  h3, p {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 10px;
+  }
+  
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .draggable-list {
+    padding: 5px;
+    
+  }
+  
+  li {
+    list-style: none;
+    padding: 14px;
+    margin: 5px;
+    background-color: #f18a5ec9;
+    border: 1px solid #b0bec5;
+    color: #0c2430;
+    cursor: grab;
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .over {
+    background-color: #90a4ae;
+  }
+  
+  
+  table {
+    max-width:640px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* border: 1px solid #b0bec5; */
+    background-color: #f18a5ec9;
+    padding: 10px;
+
+  }
+  
+  th, td {
+    padding: 10px 10px;
+    color:#000000c9 ;
+  }
+  
+  td {
+    border: 1px solid #90a4ae;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #cfd8dc;
+  }
+  
+  button {
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #607d8b;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  button:hover {
+    background-color: #516a75;
+  }
+  
+  #endMessage {
+    display: none;
+  }

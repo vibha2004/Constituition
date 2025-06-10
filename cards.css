@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    background: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; 
+}
+
+#board{
+    /* height: calc(2 * 200px + 1 * 5px);  */
+    /* width: calc(3 * 200px + 2 * 5px);   */
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 5px; /* Gap between cards */
+    box-sizing: border-box; /* Ensure padding and borders are included in element’s total width and height */
+    width: auto;
+}
+.error_count{
+    font-family: "Roboto Mono", monospace;
+}
+.p_t{
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+.h1_t{
+    color: #fabb6a;
+    text-shadow: 0 0 15px rgba(244, 192, 123, 0.8),
+                 0 0 30px rgba(244, 192, 123, 0.6),
+                 0 0 45px rgba(244, 192, 123, 0.4),
+                 0 0 60px rgba(244, 192, 123, 0.2);
+	font-family: 'Orbitron', sans-serif;
+}
+.card {
+    height: 350px;  /* Height of each card */
+    width: 350px;   /* Width of each card */
+    object-fit: contain; /* Ensure images fit within card size without being cut off */
+    padding: 10px;
+}
+
+.container_mini3{
+    max-width: 960px;
+    margin: 10px;
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 60px;
+}
+#result{
+    font-family: "Roboto Mono", monospace;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+    color: #dda45e;
+    
+}
+
+#playAgain{
+    color: rgb(255, 255, 255);
+	border: none;
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "Roboto Mono", monospace;
+	background-color: #f4c07b;
+    border: 3px solid #f4c07b;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+}
+#playAgain:hover{
+    background-color: #d8a76c;
+    transform: scale(1.05);
+}

@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bg.jpg");
+    background-size: cover;
+  }
+  
+  /* Page container styling */
+  .page {
+    text-align: center;
+  }
+  
+  /* "Constitution Unlocked" Page */
+  .container {
+    text-align: center;
+    color: #fabb6a;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px rgba(244, 192, 123, 0.8),
+                 0 0 30px rgba(244, 192, 123, 0.6),
+                 0 0 45px rgba(244, 192, 123, 0.4),
+                 0 0 60px rgba(244, 192, 123, 0.2);
+  }
+  
+  @keyframes pulse {
+    0% {
+      text-shadow: 0 0 10px rgba(244, 192, 123, 0.6),
+                   0 0 20px rgba(244, 192, 123, 0.4),
+                   0 0 30px rgba(244, 192, 123, 0.3);
+    }
+    50% {
+      text-shadow: 0 0 25px rgba(244, 192, 123, 0.9),
+                   0 0 40px rgba(244, 192, 123, 0.7),
+                   0 0 60px rgba(244, 192, 123, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(244, 192, 123, 0.6),
+                   0 0 20px rgba(244, 192, 123, 0.4),
+                   0 0 30px rgba(244, 192, 123, 0.3);
+    }
+  }
+  
+  .breathing-text {
+    font-size: 3em;
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  .start-button {
+    margin-top: 100px;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    background-color: #f4c07b;
+    border: 3px solid #f4c07b;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .start-button:hover {
+    background-color: #d8a76c;
+    transform: scale(1.05);
+  }
+  
+  .start-button:active {
+    background-color: #c09361;
+    transform: scale(0.98);
+  }
